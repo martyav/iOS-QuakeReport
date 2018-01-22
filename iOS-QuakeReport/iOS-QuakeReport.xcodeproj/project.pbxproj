@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		813E27F820169C0E003E489E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E27F720169C0E003E489E /* AppDelegate.swift */; };
+		813E27FA20169C0E003E489E /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E27F920169C0E003E489E /* EarthquakeViewController.swift */; };
+		813E27FD20169C0E003E489E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813E27FB20169C0E003E489E /* Main.storyboard */; };
+		813E27FF20169C0E003E489E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813E27FE20169C0E003E489E /* Assets.xcassets */; };
+		813E280220169C0E003E489E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813E280020169C0E003E489E /* LaunchScreen.storyboard */; };
+		813E280D20169C0E003E489E /* iOS_QuakeReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E280C20169C0E003E489E /* iOS_QuakeReportTests.swift */; };
+		813E281C20169D10003E489E /* EarthquakeViewController+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E281B20169D10003E489E /* EarthquakeViewController+Datasource.swift */; };
+		813E281E20169D32003E489E /* EarthquakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E281D20169D32003E489E /* EarthquakeEvent.swift */; };
+		813E28292016A25B003E489E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E28282016A25B003E489E /* JSONParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813E280920169C0E003E489E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813E27EC20169C0D003E489E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813E27F320169C0D003E489E;
+			remoteInfo = "iOS-QuakeReport";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		813E27F420169C0E003E489E /* iOS-QuakeReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-QuakeReport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813E27F720169C0E003E489E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		813E27F920169C0E003E489E /* EarthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
+		813E27FC20169C0E003E489E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		813E27FE20169C0E003E489E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813E280120169C0E003E489E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		813E280320169C0E003E489E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813E280820169C0E003E489E /* iOS-QuakeReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-QuakeReportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813E280C20169C0E003E489E /* iOS_QuakeReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_QuakeReportTests.swift; sourceTree = "<group>"; };
+		813E280E20169C0E003E489E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813E281B20169D10003E489E /* EarthquakeViewController+Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarthquakeViewController+Datasource.swift"; sourceTree = "<group>"; };
+		813E281D20169D32003E489E /* EarthquakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeEvent.swift; sourceTree = "<group>"; };
+		813E28282016A25B003E489E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		813E27F120169C0D003E489E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813E280520169C0E003E489E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		813E27EB20169C0D003E489E = {
+			isa = PBXGroup;
+			children = (
+				813E27F620169C0E003E489E /* iOS-QuakeReport */,
+				813E280B20169C0E003E489E /* iOS-QuakeReportTests */,
+				813E27F520169C0E003E489E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		813E27F520169C0E003E489E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				813E27F420169C0E003E489E /* iOS-QuakeReport.app */,
+				813E280820169C0E003E489E /* iOS-QuakeReportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		813E27F620169C0E003E489E /* iOS-QuakeReport */ = {
+			isa = PBXGroup;
+			children = (
+				813E282420169FCD003E489E /* Constants & Resources */,
+				813E281920169C71003E489E /* Network Utilities */,
+				813E281820169C69003E489E /* Models */,
+				813E281720169C5E003E489E /* Controllers */,
+				813E27F720169C0E003E489E /* AppDelegate.swift */,
+				813E280320169C0E003E489E /* Info.plist */,
+			);
+			path = "iOS-QuakeReport";
+			sourceTree = "<group>";
+		};
+		813E280B20169C0E003E489E /* iOS-QuakeReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				813E280C20169C0E003E489E /* iOS_QuakeReportTests.swift */,
+				813E280E20169C0E003E489E /* Info.plist */,
+			);
+			path = "iOS-QuakeReportTests";
+			sourceTree = "<group>";
+		};
+		813E281720169C5E003E489E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				813E27F920169C0E003E489E /* EarthquakeViewController.swift */,
+				813E281B20169D10003E489E /* EarthquakeViewController+Datasource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		813E281820169C69003E489E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				813E281D20169D32003E489E /* EarthquakeEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		813E281920169C71003E489E /* Network Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				813E28282016A25B003E489E /* JSONParser.swift */,
+			);
+			path = "Network Utilities";
+			sourceTree = "<group>";
+		};
+		813E281A20169C8D003E489E /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				813E27FB20169C0E003E489E /* Main.storyboard */,
+				813E27FE20169C0E003E489E /* Assets.xcassets */,
+				813E280020169C0E003E489E /* LaunchScreen.storyboard */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		813E282420169FCD003E489E /* Constants & Resources */ = {
+			isa = PBXGroup;
+			children = (
+				813E281A20169C8D003E489E /* GUI */,
+			);
+			path = "Constants & Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		813E27F320169C0D003E489E /* iOS-QuakeReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813E281120169C0E003E489E /* Build configuration list for PBXNativeTarget "iOS-QuakeReport" */;
+			buildPhases = (
+				813E27F020169C0D003E489E /* Sources */,
+				813E27F120169C0D003E489E /* Frameworks */,
+				813E27F220169C0D003E489E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-QuakeReport";
+			productName = "iOS-QuakeReport";
+			productReference = 813E27F420169C0E003E489E /* iOS-QuakeReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813E280720169C0E003E489E /* iOS-QuakeReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813E281420169C0E003E489E /* Build configuration list for PBXNativeTarget "iOS-QuakeReportTests" */;
+			buildPhases = (
+				813E280420169C0E003E489E /* Sources */,
+				813E280520169C0E003E489E /* Frameworks */,
+				813E280620169C0E003E489E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813E280A20169C0E003E489E /* PBXTargetDependency */,
+			);
+			name = "iOS-QuakeReportTests";
+			productName = "iOS-QuakeReportTests";
+			productReference = 813E280820169C0E003E489E /* iOS-QuakeReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		813E27EC20169C0D003E489E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = C4Q;
+				TargetAttributes = {
+					813E27F320169C0D003E489E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					813E280720169C0E003E489E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 813E27F320169C0D003E489E;
+					};
+				};
+			};
+			buildConfigurationList = 813E27EF20169C0D003E489E /* Build configuration list for PBXProject "iOS-QuakeReport" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 813E27EB20169C0D003E489E;
+			productRefGroup = 813E27F520169C0E003E489E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				813E27F320169C0D003E489E /* iOS-QuakeReport */,
+				813E280720169C0E003E489E /* iOS-QuakeReportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		813E27F220169C0D003E489E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813E280220169C0E003E489E /* LaunchScreen.storyboard in Resources */,
+				813E27FF20169C0E003E489E /* Assets.xcassets in Resources */,
+				813E27FD20169C0E003E489E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813E280620169C0E003E489E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		813E27F020169C0D003E489E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813E27FA20169C0E003E489E /* EarthquakeViewController.swift in Sources */,
+				813E28292016A25B003E489E /* JSONParser.swift in Sources */,
+				813E281E20169D32003E489E /* EarthquakeEvent.swift in Sources */,
+				813E281C20169D10003E489E /* EarthquakeViewController+Datasource.swift in Sources */,
+				813E27F820169C0E003E489E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813E280420169C0E003E489E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813E280D20169C0E003E489E /* iOS_QuakeReportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		813E280A20169C0E003E489E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813E27F320169C0D003E489E /* iOS-QuakeReport */;
+			targetProxy = 813E280920169C0E003E489E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		813E27FB20169C0E003E489E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813E27FC20169C0E003E489E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		813E280020169C0E003E489E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				813E280120169C0E003E489E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		813E280F20169C0E003E489E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		813E281020169C0E003E489E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		813E281220169C0E003E489E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GD7JHZ9557;
+				INFOPLIST_FILE = "iOS-QuakeReport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "martyav.iOS-QuakeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		813E281320169C0E003E489E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GD7JHZ9557;
+				INFOPLIST_FILE = "iOS-QuakeReport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "martyav.iOS-QuakeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		813E281520169C0E003E489E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GD7JHZ9557;
+				INFOPLIST_FILE = "iOS-QuakeReportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "martyav.iOS-QuakeReportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-QuakeReport.app/iOS-QuakeReport";
+			};
+			name = Debug;
+		};
+		813E281620169C0E003E489E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GD7JHZ9557;
+				INFOPLIST_FILE = "iOS-QuakeReportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "martyav.iOS-QuakeReportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-QuakeReport.app/iOS-QuakeReport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		813E27EF20169C0D003E489E /* Build configuration list for PBXProject "iOS-QuakeReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813E280F20169C0E003E489E /* Debug */,
+				813E281020169C0E003E489E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813E281120169C0E003E489E /* Build configuration list for PBXNativeTarget "iOS-QuakeReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813E281220169C0E003E489E /* Debug */,
+				813E281320169C0E003E489E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813E281420169C0E003E489E /* Build configuration list for PBXNativeTarget "iOS-QuakeReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813E281520169C0E003E489E /* Debug */,
+				813E281620169C0E003E489E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 813E27EC20169C0D003E489E /* Project object */;
+}
