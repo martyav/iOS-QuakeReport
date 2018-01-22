@@ -1,5 +1,5 @@
 # iOS-QuakeReport
-A Swift/iOS port of Udacity's Quake Report toy project
+## A Swift/iOS port of Udacity's Quake Report toy project
 
 I am an iOS developer who is currently learning Android. I received a Grow With Google scholarship from Udacity, and am working through various lessons.
 
