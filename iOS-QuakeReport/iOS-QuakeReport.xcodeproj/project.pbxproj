@@ -16,6 +16,9 @@
 		813E281C20169D10003E489E /* EarthquakeViewController+Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E281B20169D10003E489E /* EarthquakeViewController+Datasource.swift */; };
 		813E281E20169D32003E489E /* EarthquakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E281D20169D32003E489E /* EarthquakeEvent.swift */; };
 		813E28292016A25B003E489E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E28282016A25B003E489E /* JSONParser.swift */; };
+		813E282E2016F4E0003E489E /* SampleJSONResponse.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 813E282D2016F4E0003E489E /* SampleJSONResponse.geojson */; };
+		813E28312016F5FC003E489E /* SampleJSONResponse.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 813E282D2016F4E0003E489E /* SampleJSONResponse.geojson */; };
+		813E28322016F600003E489E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E28282016A25B003E489E /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 		813E281B20169D10003E489E /* EarthquakeViewController+Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EarthquakeViewController+Datasource.swift"; sourceTree = "<group>"; };
 		813E281D20169D32003E489E /* EarthquakeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeEvent.swift; sourceTree = "<group>"; };
 		813E28282016A25B003E489E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		813E282D2016F4E0003E489E /* SampleJSONResponse.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleJSONResponse.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 		813E282420169FCD003E489E /* Constants & Resources */ = {
 			isa = PBXGroup;
 			children = (
+				813E282D2016F4E0003E489E /* SampleJSONResponse.geojson */,
 				813E281A20169C8D003E489E /* GUI */,
 			);
 			path = "Constants & Resources";
@@ -228,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813E282E2016F4E0003E489E /* SampleJSONResponse.geojson in Resources */,
 				813E280220169C0E003E489E /* LaunchScreen.storyboard in Resources */,
 				813E27FF20169C0E003E489E /* Assets.xcassets in Resources */,
 				813E27FD20169C0E003E489E /* Main.storyboard in Resources */,
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813E28312016F5FC003E489E /* SampleJSONResponse.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813E28322016F600003E489E /* JSONParser.swift in Sources */,
 				813E280D20169C0E003E489E /* iOS_QuakeReportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
