@@ -26,13 +26,16 @@ class JSONParser {
             guard let root = try JSONSerialization.jsonObject(with: earthquakes, options: []) as? [String : Any] else {
                 throw JSONError.BadData
             }
+            print(root)
             
             guard let features = root["features"] as? [[String : Any]] else {
                 throw JSONError.KeyDoesNotExist
             }
+            print(features)
             
             for item in features {
                 let event = item as [String : Any]
+                print(event)
                 
                 guard let properties = event["properties"] as? [String : Any] else { throw JSONError.KeyDoesNotExist }
                 

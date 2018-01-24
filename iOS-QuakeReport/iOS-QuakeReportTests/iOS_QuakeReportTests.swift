@@ -31,10 +31,20 @@ class iOS_QuakeReportTests: XCTestCase {
         XCTAssert(!json.isEmpty)
     }
     
-    func testParser() {
-        // take in the geojsonfile, return an array of earthquakes
+    func testJSONData() {
+        let data = Constant.localJSONData
         
-        let array = exampleParser.extract(Constant.localJSONData)
+        print(data)
+        
+        XCTAssert(!data.isEmpty)
+    }
+    
+    func testParser() {
+        // note to self: parser is failing because jsonSerialization expects quotes around each key. Our keys are not wrapped in quotes and are not considered valid
+        
+        let data = Constant.localJSONData
+        
+        let array = exampleParser.extract(data)
         
         print(array)
         
