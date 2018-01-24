@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8136719A2019264500905531 /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813671992019264500905531 /* GlobalConstant.swift */; };
+		8136719B201926D900905531 /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813671992019264500905531 /* GlobalConstant.swift */; };
+		8136719C20192BEE00905531 /* EarthquakeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E281D20169D32003E489E /* EarthquakeEvent.swift */; };
 		813E27F820169C0E003E489E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E27F720169C0E003E489E /* AppDelegate.swift */; };
 		813E27FA20169C0E003E489E /* EarthquakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E27F920169C0E003E489E /* EarthquakeViewController.swift */; };
 		813E27FD20169C0E003E489E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813E27FB20169C0E003E489E /* Main.storyboard */; };
@@ -32,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		813671992019264500905531 /* GlobalConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
 		813E27F420169C0E003E489E /* iOS-QuakeReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-QuakeReport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		813E27F720169C0E003E489E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813E27F920169C0E003E489E /* EarthquakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				813E282D2016F4E0003E489E /* SampleJSONResponse.geojson */,
+				813671992019264500905531 /* GlobalConstant.swift */,
 				813E281A20169C8D003E489E /* GUI */,
 			);
 			path = "Constants & Resources";
@@ -255,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8136719A2019264500905531 /* GlobalConstant.swift in Sources */,
 				813E27FA20169C0E003E489E /* EarthquakeViewController.swift in Sources */,
 				813E28292016A25B003E489E /* JSONParser.swift in Sources */,
 				813E281E20169D32003E489E /* EarthquakeEvent.swift in Sources */,
@@ -267,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8136719B201926D900905531 /* GlobalConstant.swift in Sources */,
+				8136719C20192BEE00905531 /* EarthquakeEvent.swift in Sources */,
 				813E28322016F600003E489E /* JSONParser.swift in Sources */,
 				813E280D20169C0E003E489E /* iOS_QuakeReportTests.swift in Sources */,
 			);

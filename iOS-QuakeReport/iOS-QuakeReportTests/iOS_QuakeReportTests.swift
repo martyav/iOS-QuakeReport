@@ -23,8 +23,22 @@ class iOS_QuakeReportTests: XCTestCase {
         super.tearDown()
     }
     
+    func testJSONRetrieval() {
+        let json = Constant.localJSONContents
+        
+        print(json)
+        
+        XCTAssert(!json.isEmpty)
+    }
+    
     func testParser() {
         // take in the geojsonfile, return an array of earthquakes
+        
+        let array = exampleParser.extract(Constant.localJSONData)
+        
+        print(array)
+        
+        XCTAssert(!array.isEmpty)
     }
     
 }
