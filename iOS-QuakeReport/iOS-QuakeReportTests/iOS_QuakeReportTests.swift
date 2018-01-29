@@ -11,16 +11,22 @@ import XCTest
 
 class iOS_QuakeReportTests: XCTestCase {
     var exampleParser: JSONParser!
+    var exampleCell: EarthquakeTableViewCell!
     
     override func setUp() {
         super.setUp()
         
         self.exampleParser = JSONParser.instance
+        self.exampleCell = EarthquakeTableViewCell(style: .default, reuseIdentifier: nil)
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testCellInitialization() {
+        XCTAssert(exampleCell.magnitudeLabel.text == "111")
     }
     
     func testJSONIsCorrectlyConvertingToData() {
