@@ -23,27 +23,28 @@ class JSONParser {
         var events = [EarthquakeEvent]()
         
         do {
-            guard let root = try JSONSerialization.jsonObject(with: earthquakes, options: []) as? [String : Any] else {
+            guard let root = try JSONSerialization.jsonObject(with: earthquakes, options: .allowFragments) as? [String : AnyObject] else {
+                print(earthquakes)
                 throw JSONError.BadData
             }
             print(root)
             
-            guard let features = root["features"] as? [[String : Any]] else {
+            guard let features = root["features"] as? [[String : AnyObject]] else {
                 throw JSONError.KeyDoesNotExist
             }
             print(features)
             
             for item in features {
-                let event = item as [String : Any]
+                let event = item as [String : AnyObject]
                 print(event)
                 
-                guard let properties = event["properties"] as? [String : Any] else { throw JSONError.KeyDoesNotExist }
+                guard let properties = event["properties"] as? [String : AnyObject] else { throw JSONError.KeyDoesNotExist }
                 
                 guard let magnitude = properties["mag"] as? Double else { throw JSONError.WrongType }
                 
                 guard let place = properties["place"] as? String else { throw JSONError.WrongType }
                 
-                guard let timestamp = properties["timestamp"] as? String else { throw JSONError.WrongType }
+                guard let timestamp = properties["time"] as? Int else { throw JSONError.WrongType }
                 
                 let newEvent = EarthquakeEvent(magnitude: magnitude, place: place, timestamp: timestamp)
                 

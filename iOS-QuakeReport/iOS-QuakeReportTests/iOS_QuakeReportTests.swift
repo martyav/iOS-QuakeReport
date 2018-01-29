@@ -23,15 +23,7 @@ class iOS_QuakeReportTests: XCTestCase {
         super.tearDown()
     }
     
-    func testJSONRetrieval() {
-        let json = Constant.localJSONContents
-        
-        print(json)
-        
-        XCTAssert(!json.isEmpty)
-    }
-    
-    func testJSONData() {
+    func testJSONIsCorrectlyConvertingToData() {
         let data = Constant.localJSONData
         
         print(data)
@@ -41,12 +33,13 @@ class iOS_QuakeReportTests: XCTestCase {
     
     func testParser() {
         // note to self: parser is failing because jsonSerialization expects quotes around each key. Our keys are not wrapped in quotes and are not considered valid
+        // note to self: Chrome extension stripped quotes from JSON keys to 'prettify' it. Next time, copy directly from source
         
         let data = Constant.localJSONData
         
         let array = exampleParser.extract(data)
         
-        print(array)
+        if array.isEmpty { print(array) }
         
         XCTAssert(!array.isEmpty)
     }

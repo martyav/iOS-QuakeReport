@@ -13,9 +13,9 @@ import Foundation
 struct EarthquakeEvent {
     private let magnitude: Double
     private let place: String
-    private let timestamp: String
+    private let timestamp: Int
     
-    init(magnitude: Double, place: String, timestamp: String) {
+    init(magnitude: Double, place: String, timestamp: Int) {
         self.magnitude = magnitude
         self.place = place
         self.timestamp = timestamp
@@ -31,7 +31,7 @@ struct EarthquakeEvent {
         return self.place
     }
     
-    func getTimestamp() -> String {
+    func getTimestamp() -> Int {
         return self.timestamp
     }
 }
